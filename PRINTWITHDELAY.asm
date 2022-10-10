@@ -22,7 +22,7 @@ PRINT:  LD A,(HL)       ; A now contains the data that HL points to
         LD B,(HL)       ; On the Zilog Z80 you can't do a comparison with respect to the HL, H or L registers. So, we load the value into B so we can
                         ; perform a comparison.
         CP B            ; "Compare B," In this case, we use this to compare B to the value of 0. If it is equal to zero, the Zero flag will be set.
-        JP NZ,PRINT     ; Jump to "PRINT" if B is not zero flag is not set. This and the line above it are equal to IF(B==0) THEN GOTO PRINT
+        JP NZ,PRINT     ; Jump to "PRINT" if B is not zero flag is not set. This and the line above it are equal to IF(B != 0) THEN GOTO PRINT
         RET             ; Function is now finished, return.
         
 ; Execute meaningless code thousands of times to pause the system.
