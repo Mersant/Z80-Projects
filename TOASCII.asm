@@ -1,5 +1,6 @@
 ; Original program by David Lowry, 2021
-; Description: Converts the number pointed to by HL to an ASCII string stored in NUM. This is useful since the built in ROM routines for the SHARP PC-G830 can't print numbers directly since the numbers must be converted into ASCII characters first. 
+; Description: Converts the number pointed to by HL to an ASCII string stored in NUM. This is useful since the built in ROM routines for the 
+; SHARP PC-G830 can't print numbers directly since the numbers must be converted into ASCII characters first. 
 ; Destroys: Everything
 
 NUM: DS 4
